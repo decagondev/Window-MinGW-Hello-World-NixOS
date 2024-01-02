@@ -47,5 +47,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         return 0;
     }
 
+    hwnd = CreateWindowEx(
+        WS_EX_CLIENTEDGE,
+        g_szClassName,
+        "DSA Window!",
+        WS_OVERLAPPEDWINDOW,
+        CW_USEDEFAULT, CW_USEDEFAULT, 240, 120,
+        NULL, NULL, hInstance, NULL);
+
     return 0;
 }
