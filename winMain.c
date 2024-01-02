@@ -68,5 +68,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     ShowWindow(hwnd, nCmdShow);
     UpdateWindow(hwnd);
 
+    while(GetMessage(&Msg, NULL, 0, 0) > 0)
+    {
+        TranslateMessage(&Msg);
+        DispatchMessage(&Msg);
+    }
+    
     return 0;
 }
