@@ -65,5 +65,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         MessageBox(NULL, "Window is working!", "Working!", MB_OK);
     }
 
+    ShowWindow(hwnd, nCmdShow);
+    UpdateWindow(hwnd);
+
     return 0;
 }
