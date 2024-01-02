@@ -2,7 +2,7 @@
 #include <windows.h>
 #include <stdio.h>
 
-const char g_szClassName[] = "DSAWindowClass";
+const char *g_szClassName = "DSAWindowClass";
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -23,7 +23,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 
-    WNDCLASSX wc;
+    WNDCLASSEX wc;
     HWND hwnd;
     MSG Msg;
 
