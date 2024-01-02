@@ -73,6 +73,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         TranslateMessage(&Msg);
         DispatchMessage(&Msg);
     }
-    
-    return 0;
+
+    return Msg.wParam;
 }
